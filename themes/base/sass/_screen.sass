@@ -15,23 +15,50 @@ $grid-gutter-width: 10px
     @extend .grid-suffix-4 
   
 body
-  @extend .font-helvetica
   background: white
   padding-top: 40px
 
 h1
-  font-size: 30px
-  font-weight: bold
-  margin-bottom: 20px
+  font-size: 2em
+  color: $color-yellow
+  text-shadow: $color-blue 2px 2px 0
+  margin-bottom: 1em
 
 p
-  color: #444
-  font-size: 14px
-  line-height: 1.4
-  margin-bottom: 14px
+  margin-bottom: 1em
   &:last-child
     margin-bottom: 0
   &.last
     @extend .grid-16
     @extend .grid-prefix-4
     @extend .grid-suffix-4 
+
+em
+  @extend .font-italic
+
+form
+  ol
+    margin: 0 1em
+    padding: 1em 0
+    li
+      // Hide the list nature of forms
+      list-style: none
+      margin-bottom: 1em
+  label
+    @extend .font-caps
+    display: inline-block
+    em
+      font-size: 0.8em
+      letter-spacing: 0
+  input[type=text]
+    float: right
+    width: 20em
+    border: 0
+    border-bottom: 1px $color-darkblue solid
+  input[type=submit]
+    @extend .font-caps
+    float: right
+    border: 0
+    background: $color-yellow
+    &:hover
+      background: $color-lightyellow
