@@ -6,10 +6,10 @@
 @import compass/css3
 @import partials/typography
 
-$base-font-size: 14px
-$base-link-color: green
+$base-font-size: 1.1em
+$base-form-text-color: $color-darkblue
+$base-link-color: $color-blue
 $base-link-color-hover: lighten($base-link-color,10)
-$base-form-text-color: #444
 $webkit-tap-highlight-color: #59bef2
 $invalid-box-shadow-color: red
 
@@ -159,10 +159,11 @@ body, select, input, textarea
   // #444 looks better than black: twitter.com/H_FJ/statuses/11800719859
   color: $base-form-text-color
   // Set your base font here, to apply evenly
-  font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif
+  @extend .font-body
   font-size: $base-font-size
+  line-height: 1.6
 
 // Bold the headers
 
 h1, h2, h3, h4, h5, h6
-  font-weight: bold
+  @extend .font-boldcaps
