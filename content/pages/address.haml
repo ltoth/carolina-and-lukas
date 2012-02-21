@@ -2,51 +2,55 @@
 
 %h1 How can we reach you?
 
-%p We have something to send you, but we're not sure where to send it. Could you let us know what your current mailing address is?
+#form
+  %p We have something to send you, but we're not sure where to send it. Could you let us know what your current mailing address is?
 
-%p Thank you!
+  %p Thank you!
 
-%p 
-  %em &mdash;Carolina and Lukas
+  %p
+    %em &mdash;Carolina and Lukas
 
-%iframe#form_submit.hidden{:name => "form_submit"}
 
-%form{:action => "https://docs.google.com/spreadsheet/formResponse?formkey=dENQbXVzU2xwRGtJVlc5cGhWTWdVZFE6MQ&ifq", :method => "POST", :target => "form_submit"}
-  %ol
-    %li
-      %label{:for => "entry_0"}
-        Full Name
-      %input#entry_0{:name => "entry.0.single", :type => "text", :value => ""}/
-    %li
-      %label{:for => "entry_1"}
-        Street
-      %input#entry_1{:name => "entry.1.single", :type => "text", :value => ""}/
-    %li
-      %label{:for => "entry_3"}
-        City
-      %input#entry_3{:name => "entry.3.single", :type => "text", :value => ""}/
-    %li
-      %label{:for => "entry_6"}
-        State
-        %em
-          (if applicable)
-      %input#entry_6{:name => "entry.6.single", :type => "text", :value => ""}/
-    %li
-      %label{:for => "entry_7"}
-        ZIP
-        %em
-          (postal code)
-      %input#entry_7{:name => "entry.7.single", :type => "text", :value => ""}/
-    %li
-      %label{:for => "entry_8"}
-        Country
-      %input#entry_8{:name => "entry.8.single", :type => "text", :value => ""}/
-    %li
-      %label{:for => "entry_11"}
-        Phone number
-      %input#entry_11{:name => "entry.11.single", :type => "text", :value => ""}/
-    %li
-      %input{:name => "submit", :type => "submit", :value => "Submit"}/
-  %input{:name => "pageNumber", :type => "hidden", :value => "0"}
-  %input{:name => "backupCache", :type => "hidden", :value => ""}
+  %iframe#form_submit.hidden{:name => "form_submit"}
 
+  %form#address_form{:action => "https://docs.google.com/spreadsheet/formResponse?formkey=dENQbXVzU2xwRGtJVlc5cGhWTWdVZFE6MQ&ifq", :method => "POST", :target => "form_submit"}
+    %ol
+      %li
+        %label{:for => "entry_0"}
+          Full Name
+        %input#entry_0{:name => "entry.0.single", :type => "text", :value => ""}/
+      %li
+        %label{:for => "entry_1"}
+          Street
+        %input#entry_1{:name => "entry.1.single", :type => "text", :value => ""}/
+      %li
+        %label{:for => "entry_3"}
+          City
+        %input#entry_3{:name => "entry.3.single", :type => "text", :value => ""}/
+      %li
+        %label{:for => "entry_6"}
+          State
+          %em
+            (if applicable)
+        %input#entry_6{:name => "entry.6.single", :type => "text", :value => ""}/
+      %li
+        %label{:for => "entry_7"}
+          ZIP
+          %em
+            (postal code)
+        %input#entry_7{:name => "entry.7.single", :type => "text", :value => ""}/
+      %li
+        %label{:for => "entry_8"}
+          Country
+        %input#entry_8{:name => "entry.8.single", :type => "text", :value => ""}/
+      %li
+        %label{:for => "entry_11"}
+          Phone number
+        %input#entry_11{:name => "entry.11.single", :type => "text", :value => ""}/
+      %li
+        %input{:name => "submit", :type => "submit", :value => "Submit"}/
+    %input{:name => "pageNumber", :type => "hidden", :value => "0"}
+    %input{:name => "backupCache", :type => "hidden", :value => ""}
+
+#confirmation
+  %p Thanks for sending us your address!
