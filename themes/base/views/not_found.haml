@@ -1,1 +1,8 @@
-%p Page not found.
+- @body_class = "not_found"
+
+%h2 Strange...
+
+%p
+  Nothing appears to be here. Try
+  = succeed '.' do
+    %a(href="/") checking here

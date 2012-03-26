@@ -12,17 +12,39 @@ $grid-gutter-width: 10px
   margin: 0
   .content
     @extend .grid-16
-    background: rgba(255,255,255,0.8)
+    background: rgba(255,255,255,0.9)
     padding: 1em
+    @include box-shadow(black,2px,2px)
 
 header
   background: image_url("content-top.png")
   width: 100%
   height: 130px
+  h1
+    @extend .font-boldcaps
+    font-size: 2em
+    color: $color-yellow
+    text-shadow: $color-blue 2px 2px 0
+    position: relative
+    top: 2.5em
+    text-align: center
+    a
+      color: inherit
+      &:hover
+        color: inherit
+        text-decoration: none
+
+  span.subheading
+    display: block
+    @extend .font-caps
+    font-size: 1.2em
+    text-align: center
+    position: relative
+    top: 4em
 
 article
   background: image_url("content-middle.png") repeat-y
-  padding: 0 1em
+  padding: 3.5em 1em 0
 
 footer
   background: image_url("content-bottom.png")
@@ -31,16 +53,15 @@ footer
 
 body
   background: white image_url("background.jpg") no-repeat right top
+  background-attachment: fixed
   padding: 3em
 
-h1
-  font-size: 2em
-  color: $color-yellow
-  text-shadow: $color-blue 2px 2px 0
-  margin-bottom: 1em
-  text-align: center
+h2
+  font-size: 1.5em
+  color: $color-darkblue
 
 p
+  margin-left: 1em
   margin-bottom: 1em
   &:last-child
     margin-bottom: 0
@@ -51,6 +72,9 @@ p
 
 em
   @extend .font-italic
+
+span.caps
+  @extend .font-caps
 
 form
   ol
