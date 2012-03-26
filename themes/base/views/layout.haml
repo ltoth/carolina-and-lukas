@@ -9,4 +9,7 @@
   %body{:class => @body_class}
     .container
       .content
-        = yield
+        %header
+        %article
+          = yield
+        %footer

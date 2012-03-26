@@ -757,13 +757,29 @@ body, select, input, textarea {
 }
 .container .content {
   background: rgba(255, 255, 255, 0.8);
-  padding: 1em 0;
+  padding: 1em;
+}
+
+header {
+  background: url('../images/content-top.png?1332728074');
+  width: 100%;
+  height: 130px;
+}
+
+article {
+  background: url('../images/content-middle.png?1332728160') repeat-y;
+  padding: 0 1em;
+}
+
+footer {
+  background: url('../images/content-bottom.png?1332728113');
+  width: 100%;
+  height: 126px;
 }
 
 body {
   background: white url('../images/background.jpg?1332723669') no-repeat right top;
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 3em;
 }
 
 h1 {
@@ -771,6 +787,7 @@ h1 {
   color: #ffdb33;
   text-shadow: #66b5ff 2px 2px 0;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 p {
@@ -797,7 +814,7 @@ form label em {
 }
 form input[type=text] {
   float: right;
-  width: 20em;
+  width: 19em;
   border: 0;
   border-bottom: 1px #002081 solid;
   background: none;
