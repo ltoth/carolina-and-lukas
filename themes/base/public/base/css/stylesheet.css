@@ -872,6 +872,10 @@ form input[type=submit]:hover {
   .container .content {
     padding: 0;
     width: auto;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
   }
 
   header {
