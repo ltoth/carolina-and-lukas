@@ -91,7 +91,7 @@ table {
   font-family: "TheSerifSemiBold", "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-caps, h1, h2, h3, h4, h5, h6, header span.subheading, span.caps, form label, form input[type=submit] {
+.font-caps, h1, h2, h3, h4, h5, h6, header span.subheading, .caps, form label, form input[type=submit] {
   text-transform: lowercase;
   font-family: "TheSerifSemiLightCaps", "Helvetica-Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.1em;

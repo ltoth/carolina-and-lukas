@@ -14,7 +14,7 @@ $grid-gutter-width: 10px
     @extend .grid-16
     background: rgba(255,255,255,0.9)
     padding: 1em
-    @include box-shadow(black,2px,2px)
+    +box-shadow(black,2px,2px)
 
 header
   background: image_url("content-top.png")
@@ -73,7 +73,7 @@ p
 em
   @extend .font-italic
 
-span.caps
+.caps
   @extend .font-caps
 
 form
