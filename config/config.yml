@@ -1,8 +1,8 @@
 # Title and subheading for your site. Used on the home page and in page
 # titles.
 #
-title: "Nesta Bootstrap"
-subtitle: "Get started faster with a bootstrap."
+title: "Carolina and Lukas"
+subtitle: "Carolina and Lukas are getting married!"
 
 # If you want to set the descrition or keywords meta tags on your site's
 # home page, do it here.
@@ -17,9 +17,9 @@ subtitle: "Get started faster with a bootstrap."
 # http://www.atomenabled.org/developers/syndication/atom-format-spec.php#element.feed
 #
 author:
-  name: Adam Stacoviak
-  uri: http://adamstacoviak.com
-  email: adam@stacoviak.com
+  name: Lukas Toth
+  #uri: http://adamstacoviak.com
+  email: lukas@lukastoth.com
 
 # You can stick with the default look and feel, or use a theme. Themes are
 # easy to create or install, and live inside the themes directory. You
