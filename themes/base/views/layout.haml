@@ -8,6 +8,7 @@
     %script{:type => "text/javascript", :src => "/base/javascripts/application.js"}
     = haml :analytics, :layout => false
   %body{:class => @body_class}
+    %a#top(name="top")
     .container
       .content
         %header
@@ -18,19 +19,19 @@
           %nav
             %ul
               %li
-                %a(href="/") Home
+                %a(href="/#top") Home
               %li
                 %a(href="/#rsvp") RSVP
               //%li
-              //  %a(href="/schedule") Schedule
+              //  %a(href="/schedule#top") Schedule
               %li
-                %a(href="/hotel") Hotel
+                %a(href="/hotel#top") Hotel
               //%li
-              //  %a(href="/slovensko") Slovakia
+              //  %a(href="/slovensko#top") Slovakia
               %li
-                %a(href="/registry") Registry
+                %a(href="/registry#top") Registry
               %li
-                %a(href="/contact") Contact Us
+                %a(href="/contact#top") Contact Us
         %article
           = yield
         %footer
@@ -38,12 +39,12 @@
           %nav
             %ul
               %li
-                %a(href="/") Home
+                %a(href="/#top") Home
               %li
                 %a(href="/#rsvp") RSVP
               %li
-                %a(href="/hotel") Hotel
+                %a(href="/hotel#top") Hotel
               %li
-                %a(href="/registry") Registry
+                %a(href="/registry#top") Registry
               %li
-                %a(href="/contact") Contact Us
+                %a(href="/contact#top") Contact Us

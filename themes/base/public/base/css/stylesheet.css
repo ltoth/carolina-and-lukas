@@ -764,6 +764,12 @@ body, select, input, textarea {
   box-shadow: 2px 2px 5px black;
 }
 
+a#top {
+  position: absolute;
+  top: -3em;
+  left: 0;
+}
+
 header {
   background: url('../images/content-top.png?1332728074');
   width: 100%;
