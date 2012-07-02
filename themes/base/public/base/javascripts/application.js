@@ -10,4 +10,14 @@ $(document).ready(function () {
     });
   }
 
+  if ($('body').hasClass('index')) {
+    $('#confirmation').hide();
+
+    $('form#rsvp_form').submit(function(e) {
+        $('#form').hide();
+        $('#confirmation').show();
+        return true;
+    });
+  }
+
 });
