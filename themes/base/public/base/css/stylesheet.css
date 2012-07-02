@@ -91,7 +91,7 @@ table {
   font-family: "TheSerifSemiBold", "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-caps, h1, h2, h3, h4, h5, h6, header span.subheading, footer nav ul, .caps, form label, form input[type=submit] {
+.font-caps, h1, h2, h3, h4, h5, h6, header span.subheading, header nav ul, footer nav ul, .caps, form label, form input[type=submit] {
   text-transform: lowercase;
   font-family: "TheSerifSemiLightCaps", "Helvetica-Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.1em;
@@ -773,9 +773,8 @@ header h1 {
   font-size: 2em;
   color: #ffdb33;
   text-shadow: #66b5ff 2px 2px 0;
-  position: relative;
-  top: 2.5em;
   text-align: center;
+  padding-top: 2.5em;
 }
 header h1 a {
   color: inherit;
@@ -791,10 +790,14 @@ header span.subheading {
   position: relative;
   top: 4em;
 }
+header hr {
+  top: 2.5em;
+  padding-top: 0.5em;
+}
 
 article {
   background: url('../images/content-middle.png?1332728160') repeat-y;
-  padding: 3.5em 1em 2em;
+  padding: 5em 1em 2em;
 }
 
 footer {
@@ -803,18 +806,21 @@ footer {
   height: 126px;
 }
 footer hr {
+  top: -1em;
+}
+
+header hr, footer hr {
   border: none;
   border-bottom: 1px solid #66b5ff;
   margin: 0 2em;
   position: relative;
-  top: -1em;
 }
-footer nav {
+header nav, footer nav {
   position: relative;
   left: 50%;
   float: left;
 }
-footer nav ul {
+header nav ul, footer nav ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -823,7 +829,7 @@ footer nav ul {
   position: relative;
   left: -50%;
 }
-footer nav ul li {
+header nav ul li, footer nav ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -833,13 +839,13 @@ footer nav ul li {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
-footer nav ul li:first-child, footer nav ul li.first {
+header nav ul li:first-child, header nav ul li.first, footer nav ul li:first-child, footer nav ul li.first {
   padding-left: 0;
 }
-footer nav ul li:last-child {
+header nav ul li:last-child, footer nav ul li:last-child {
   padding-right: 0;
 }
-footer nav ul li.last {
+header nav ul li.last, footer nav ul li.last {
   padding-right: 0;
 }
 

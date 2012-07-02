@@ -1,5 +1,7 @@
 - @body_class = "index"
 
+%a(name="rsvp")
+
 %h2 RSVP
 
 #form
@@ -48,11 +50,9 @@
   Carolina&rsquo;s mother, Rev. Vicki Harrington Franch, will perform the marriage ceremony in the main sanctuary of the 
   %a(href="http://peachtreepres.org/") Peachtree Presbyterian Church
   in
-  = succeed '.' do
-    %a(href="https://maps.google.com/maps?q=Peachtree+Presbyterian+Church,+Roswell+Road+Northwest,+Atlanta,+GA&hl=en&sll=37.0625,-95.677068&sspn=47.215051,92.724609&oq=Peachtree+Pres&hq=Peachtree+Presbyterian+Church,&hnear=Roswell+Rd+NW,+Atlanta,+Fulton,+Georgia&t=m&z=16")
-      = succeed ',' do
-        Atlanta
-      %span.caps> GA
+  = surround ' ', '.' do
+    %a(href="https://maps.google.com/maps?q=Peachtree+Presbyterian+Church,+Roswell+Road+Northwest,+Atlanta,+GA&hl=en&sll=37.0625,-95.677068&sspn=47.215051,92.724609&oq=Peachtree+Pres&hq=Peachtree+Presbyterian+Church,&hnear=Roswell+Rd+NW,+Atlanta,+Fulton,+Georgia&t=m&z=16")<
+      Atlanta
   This will be followed by a cake reception downstairs, in the Williams Center.
 
 %h2 Coming from out of town?
@@ -68,9 +68,9 @@
   Take a look at the
   %a(href="/hotel") special rates
   and follow the
-  %a(href="/hotel") instructions
+  %a(href="/hotel#making-a-reservation") instructions
   on how to make a reservation.
-  Please try to make your reservation before August 1. After this date,
+  Please try to make your reservation before August&nbsp;1. After this date,
   the rooms we have reserved for
   %em you
   can be booked by strangers, and the hotel could get booked up.
