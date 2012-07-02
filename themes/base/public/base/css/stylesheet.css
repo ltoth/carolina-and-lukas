@@ -892,6 +892,7 @@ form ol li {
 }
 form ol ol {
   padding-left: 10em;
+  padding-bottom: 0;
 }
 form label {
   display: inline-block;
