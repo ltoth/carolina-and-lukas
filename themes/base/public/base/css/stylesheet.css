@@ -175,7 +175,7 @@ textarea {
 }
 
 input[type="radio"] {
-  vertical-align: text-bottom;
+  vertical-align: baseline;
 }
 input[type="checkbox"] {
   vertical-align: bottom;
@@ -877,6 +877,9 @@ form ol {
 form ol li {
   list-style: none;
   margin-bottom: 1em;
+}
+form ol ol {
+  padding-left: 10em;
 }
 form label {
   display: inline-block;
