@@ -38,15 +38,21 @@
 
 %h2 When?
 
-%p The ceremony will take place on August 25, 2012 beginning at 3:00 p.m.
+%p
+  The ceremony will take place on August 25, 2012 starting at 3:00 p.m.
+  Seating will begin at 2:30 p.m.
 
 %h2 Where?
 
 %p
   Carolina&rsquo;s mother, Rev. Vicki Harrington Franch, will perform the marriage ceremony in the main sanctuary of the 
   %a(href="http://peachtreepres.org/") Peachtree Presbyterian Church
-  in Atlanta,
-  %span.caps GA.
+  in
+  = succeed '.' do
+    %a(href="https://maps.google.com/maps?q=Peachtree+Presbyterian+Church,+Roswell+Road+Northwest,+Atlanta,+GA&hl=en&sll=37.0625,-95.677068&sspn=47.215051,92.724609&oq=Peachtree+Pres&hq=Peachtree+Presbyterian+Church,&hnear=Roswell+Rd+NW,+Atlanta,+Fulton,+Georgia&t=m&z=16")
+      = succeed ',' do
+        Atlanta
+      %span.caps> GA
   This will be followed by a cake reception downstairs, in the Williams Center.
 
 %h2 Coming from out of town?
@@ -59,35 +65,14 @@
   transportation from this hotel to the ceremony, reception, and back.
 
 %p
-  To make a reservation at the special
-  = succeed ',' do
-    %a(href="/hotel") group rates
-  call (800) 548-5631 toll-free from the
-  = succeed ',' do
-    %span.caps US
-  or +1 (404) 876-6100 from anywhere. Make sure
-  to mention the group code
-  %span.caps FRANTOTH
-  and the name of the group, &ldquo;Franch Toth Wedding Group&rdquo;.
-
-%p
-  If you prefer not to call, you can email
-  = succeed ',' do
-    %a(href="mailto:wendy@artmorehotel.com") Wendy Smith
-  our contact at the hotel, instead: 
-  = succeed '.' do
-    %a(href="mailto:wendy@artmorehotel.com") wendy@artmorehotel.com
-
-%p
-  Please try to make your hotel reservation
-  before August 1. After this date, the rooms we have reserved for
+  Take a look at the
+  %a(href="/hotel") special rates
+  and follow the
+  %a(href="/hotel") instructions
+  on how to make a reservation.
+  Please try to make your reservation before August 1. After this date,
+  the rooms we have reserved for
   %em you
   can be booked by strangers, and the hotel could get booked up.
 
-%p
-  If you find that your preferred type of room (king, double, suite)
-  is not available,
-  = succeed ',' do
-    %a(href="/contact") let us know
-  as we may be able to work with the hotel to accommodate you.
 
