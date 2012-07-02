@@ -1,5 +1,41 @@
 - @body_class = "index"
 
+%h2 RSVP
+
+#form
+  %p Kindly reply before the fifteenth of July.
+
+  %iframe#form_submit.hidden{:name => "form_submit"}
+
+  %form#rsvp_form{:action => "https://docs.google.com/spreadsheet/formResponse?formkey=dC1felBMZVJMZUlOQTVXRmVQbncwNWc6MQ&amp;ifq", :method => "POST", :target => "form_submit"}
+    %ol
+      %li
+        %label{:for => "entry_0"}
+          Names(s)
+        %input#entry_0{:name => "entry.0.single", :type => "text", :value => ""}/
+      %ol
+        %li
+          %label{:for => "group_1_1"}
+            %input#group_1_1{:name => "entry.1.group", :type => "radio", :value => "1"}/
+            will attend
+        %li
+          %label{:for => "group_1_2"}
+            %input#group_1_2{:name => "entry.1.group", :type => "radio", :value => "0"}/
+            will not attend
+      %li
+        %label{:for => "entry_2"}
+          Notes
+        %input#entry_3{:name => "entry.2.single", :type => "text", :value => ""}/
+      %li
+        %input{:name => "submit", :type => "submit", :value => "Submit"}/
+    %input{:name => "pageNumber", :type => "hidden", :value => "0"}
+    %input{:name => "backupCache", :type => "hidden", :value => ""}
+
+  %p &nbsp;
+
+%p#confirmation
+  Thank you for your prompt response!
+
 %h2 When?
 
 %p The ceremony will take place on August 25, 2012 beginning at 3:00 p.m.
