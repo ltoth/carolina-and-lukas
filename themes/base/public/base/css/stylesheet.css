@@ -870,9 +870,6 @@ p {
   margin-left: 1em;
   margin-bottom: 1em;
 }
-p:last-child {
-  margin-bottom: 0;
-}
 
 ul {
   list-style: disc;
