@@ -91,7 +91,7 @@ table {
   font-family: "TheSerifSemiBold", "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-caps, h1, h2, h3, h4, h5, h6, header span.subheading, header nav ul, footer nav ul, .caps, form label, form input[type=submit] {
+.font-caps, h1, h2, h3, h4, h5, h6, header span.subheading, header nav ul, footer nav ul, .caps, figcaption, form label, form input[type=submit] {
   text-transform: lowercase;
   font-family: "TheSerifSemiLightCaps", "Helvetica-Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.1em;
@@ -877,6 +877,19 @@ ul {
 }
 ul li {
   line-height: 1.5;
+}
+
+figure {
+  margin: 1em;
+}
+
+figcaption {
+  text-align: right;
+  font-size: 0.8em;
+}
+figcaption img {
+  vertical-align: text-top;
+  padding-right: 0.3em;
 }
 
 form ol {
