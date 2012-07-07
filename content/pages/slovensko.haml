@@ -1,0 +1,44 @@
+- @title = "Slovenská svadobná hostina"
+- @body_class = "slovensko"
+
+%a#rsvp
+
+%h2 Potvrďte účasť
+
+#form
+  %p Prosím potvrďte účasť do dvadsiateho júla.
+
+  %iframe#form_submit.hidden{:name => "form_submit"}
+
+  %form#rsvp_form{:action => "https://docs.google.com/spreadsheet/formResponse?formkey=dDJSTDNoY2haYVJqd1hoV2ZQRnNEWnc6MQ&amp;ifq", :method => "POST", :target => "form_submit"}
+    %ol
+      %li
+        %label{:for => "entry_0"}
+          Mená
+        %input#entry_0{:name => "entry.0.single", :type => "text", :value => ""}/
+      %li
+        %ol
+          %li
+            %label{:for => "group_1_1"}
+              %input#group_1_1{:name => "entry.1.group", :type => "radio", :value => "1"}/
+              prídem(e)
+          %li
+            %label{:for => "group_1_2"}
+              %input#group_1_2{:name => "entry.1.group", :type => "radio", :value => "0"}/
+              neprídem(e)
+      %li
+        %label{:for => "entry_2"}
+          Poznámky
+        %input#entry_2{:name => "entry.2.single", :type => "text", :value => ""}/
+      %li
+        %input{:name => "submit", :type => "submit", :value => "Poslať"}/
+    %input{:name => "pageNumber", :type => "hidden", :value => "0"}
+    %input{:name => "backupCache", :type => "hidden", :value => ""}
+
+  %p
+    %em
+      Ak plánujete prísť, prosím vymenujte všetkých hostí.
+
+%p#confirmation
+  Ďakujeme za rýchlu odpoveď.
+

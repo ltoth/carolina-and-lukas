@@ -20,6 +20,16 @@ $(document).ready(function () {
     });
   }
 
+  if ($('body').hasClass('slovensko')) {
+    $('#confirmation').hide();
+
+    $('form#rsvp_form').submit(function(e) {
+        $('#form').hide();
+        $('#confirmation').show();
+        return true;
+    });
+  }
+
   $('a[href*="#"]').click(function(event){
 
     //get the full url - like mysitecom/index.htm#home
