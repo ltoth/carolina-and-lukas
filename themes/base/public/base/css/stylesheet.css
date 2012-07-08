@@ -900,6 +900,13 @@ form ol li {
   list-style: none;
   margin-bottom: 1em;
 }
+form ol li.buttons {
+  text-align: right;
+  clear: both;
+}
+form ol li:last-child {
+  margin-bottom: 0;
+}
 form ol ol {
   padding-left: 10em;
   padding-bottom: 0;
@@ -918,8 +925,16 @@ form input[type=text] {
   border-bottom: 1px #002081 solid;
   background: none;
 }
-form input[type=submit] {
+form textarea {
   float: right;
+  margin-bottom: 1em;
+  width: 19em;
+  height: 1.5em;
+  border: 0;
+  border-bottom: 1px #002081 solid;
+  background: none;
+}
+form input[type=submit] {
   border: 0;
   background: #ffdb33;
 }

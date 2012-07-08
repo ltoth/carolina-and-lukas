@@ -125,6 +125,11 @@ form
       // Hide the list nature of forms
       list-style: none
       margin-bottom: 1em
+      &.buttons
+        text-align: right
+        clear: both
+      &:last-child
+        margin-bottom: 0
     ol
       padding-left: 10em
       padding-bottom: 0
@@ -140,9 +145,16 @@ form
     border: 0
     border-bottom: 1px $color-darkblue solid
     background: none
+  textarea
+    float: right
+    margin-bottom: 1em
+    width: 19em
+    height: 1.5em
+    border: 0
+    border-bottom: 1px $color-darkblue solid
+    background: none
   input[type=submit]
     @extend .font-caps
-    float: right
     border: 0
     background: $color-yellow
     &:hover
