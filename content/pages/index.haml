@@ -31,7 +31,7 @@
       %li
         %label{:for => "entry_0"}
           Name(s)
-        %input#entry_0{:name => "entry.0.single", :type => "text", :value => ""}/
+        %textarea#entry_0{:name => "entry.0.single"}
       %li
         %ol
           %li
@@ -45,8 +45,8 @@
       %li
         %label{:for => "entry_2"}
           Notes
-        %input#entry_2{:name => "entry.2.single", :type => "text", :value => ""}/
-      %li
+        %textarea#entry_2{:name => "entry.2.single"}
+      %li.buttons
         %input{:name => "submit", :type => "submit", :value => "Submit"}/
     %input{:name => "pageNumber", :type => "hidden", :value => "0"}
     %input{:name => "backupCache", :type => "hidden", :value => ""}

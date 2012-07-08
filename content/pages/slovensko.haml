@@ -17,7 +17,7 @@
       %li
         %label{:for => "entry_0"}
           Mená
-        %input#entry_0{:name => "entry.0.single", :type => "text", :value => ""}/
+        %textarea#entry_0{:name => "entry.0.single"}
       %li
         %ol
           %li
@@ -31,7 +31,7 @@
       %li
         %label{:for => "entry_2"}
           Poznámky
-        %input#entry_2{:name => "entry.2.single", :type => "text", :value => ""}/
+        %textarea{:name => "entry.2.single"}
       %li.buttons
         %input{:name => "submit", :type => "submit", :value => "Poslať"}/
     %input{:name => "pageNumber", :type => "hidden", :value => "0"}
